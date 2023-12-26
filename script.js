@@ -31,7 +31,7 @@ function signUp(e) {
       denyButtonText: `No`
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.pathname = "/main.html";
+        window.location.pathname = "/api_fetch1/main.html";
       } else if (result.isDenied) {
         Swal.fire("Datas not saved", "", "error");
       }
